@@ -18,7 +18,7 @@ Built with pure HTML, CSS & JavaScript — no frameworks, no backend, no login r
 
 
 
-✨ Features
+##✨ Features
 
 
 ✈️ Trip Planner — Enter destination, duration, weather, trip type, travelers and budget
