@@ -13,46 +13,41 @@ Built with pure HTML, CSS & JavaScript — no frameworks, no backend, no login r
 🔗 View Live
 
 
-📸 Screenshots
-<img src="assets/PackWise.jpg" alt="PackWise image">
+<img src="PackWise/assets/PackWise.jpg" alt="PackWise image">
 
 
 
 
-✨ Features
+<p>✨ Features</p>
 
 
-✈️ Trip Planner — Enter destination, duration, weather, trip type, travelers and budget
-🧳 Smart Checklist — Auto-generated packing list based on your trip details with custom item support
-💰 Budget Tracker — Track expenses by category with real-time remaining balance
-📊 Dashboard — Complete trip overview with packing progress and budget summary
-📄 Export as PDF — Download your dashboard as a PDF with one click
-💾 Persistent Data — All data saved in localStorage, synced across all pages
-📱 Responsive Design — Works on desktop and mobile
+<p>✈️ Trip Planner — Enter destination, duration, weather, trip type, travelers and budget</p>
+<p>🧳 Smart Checklist — Auto-generated packing list based on your trip details with custom item support</p>
+<p>💰 Budget Tracker — Track expenses by category with real-time remaining balance</p>
+<p>📊 Dashboard — Complete trip overview with packing progress and budget summary</p>
+<p>📄 Export as PDF — Download your dashboard as a PDF with one click</p>
+<p>💾 Persistent Data — All data saved in localStorage, synced across all pages</p>
+<p>📱 Responsive Design — Works on desktop and mobile</p>
 
 
 
 🗺️ How It Works
 
+
 Home → Planner → Checklist → Budget → Dashboard
 
 
-Home — Learn about the app and get started
-Planner — Fill in your trip details (saved to localStorage)
-Checklist — Get a smart packing list, check items off as you pack
-Budget — Add and track expenses by category
-Dashboard — See your full trip summary, packing progress and budget at a glance
-Export — Download your dashboard as a PDF
-
-
-
-🛠️ Tech Stack
-
-TechnologyUsed ForHTML5Page structureCSS3Styling & responsive designJavaScript (ES6)Logic & DOM manipulationlocalStorageData persistence across pageswindow.print()PDF exportGoogle FontsTypography (Poppins)
+<p>Home — Learn about the app and get started</p>
+<p>Planner — Fill in your trip details (saved to localStorage)</p>
+<p>Checklist — Get a smart packing list, check items off as you pack</p>
+<p>Budget — Add and track expenses by category</p>
+<p>Dashboard — See your full trip summary, packing progress and budget at a glance</p>
+<p>Export — Download your dashboard as a PDF</p>
 
 
 📁 Project Structure
 
+```
 PackWise/
 ├── index.html              # Home page
 ├── style.css               # Global styles
@@ -75,21 +70,14 @@ PackWise/
 │   └── dashboard.js
 └── assets/
     └── travelimage.png
-
-
-🚀 Getting Started
+```
+ Getting Started
 
 Run Locally
-
-
 Clone the repository:
 
 
 bashgit clone https://github.com/prince-kr-gupta/PackWise
-
-
-Open the project folder:
-
 
 bashcd PackWise
 
