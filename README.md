@@ -11,7 +11,7 @@ Built with pure HTML, CSS & JavaScript — no frameworks, no backend, no login r
 
 
 🔗 View Live
-
+https://prince-kr-gupta.github.io/PackWise/
 
 <img src="assets/PackWise.jpg" alt="PackWise image">
 
