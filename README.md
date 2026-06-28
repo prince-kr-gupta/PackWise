@@ -28,8 +28,11 @@ Built with pure HTML, CSS & JavaScript — no frameworks, no backend, no login r
 <p>📄 Export as PDF — Download your dashboard as a PDF with one click</p>
 <p>💾 Persistent Data — All data saved in localStorage, synced across all pages</p>
 <p>📱 Responsive Design — Works on desktop and mobile</p>
-<br>
+
+
+
 🗺️ How It Works
+
 
 Home → Planner → Checklist → Budget → Dashboard
 
