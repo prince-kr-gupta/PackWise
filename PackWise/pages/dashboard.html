@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | PackWise</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">PackWise</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="checklist.html">Checklist</a></li>
+                <li><a href="budget.html">Budget</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="dashboard-header">
+        <h1>Your Trip Dashboard</h1>
+        <p>A quick overview of your trip, packing progress, and budget.</p>
+    </section>
+
+
+    <!-- Trip Summary -->
+    <section class="dash-section">
+        <div class="dash-card" id="noTripMsg" style="display:none;">
+            <p class="empty-state">No trip planned yet. <a href="planner.html">Start planning →</a></p>
+        </div>
+
+        <div class="dash-card trip-card" id="tripCard">
+            <h2>✈️ Trip Summary</h2>
+            <div class="trip-grid">
+                <div class="trip-item">
+                    <span class="trip-label">Destination</span>
+                    <span class="trip-value" id="d-destination">—</span>
+                </div>
+                <div class="trip-item">
+                    <span class="trip-label">Duration</span>
+                    <span class="trip-value" id="d-days">—</span>
+                </div>
+                <div class="trip-item">
+                    <span class="trip-label">Weather</span>
+                    <span class="trip-value" id="d-weather">—</span>
+                </div>
+                <div class="trip-item">
+                    <span class="trip-label">Trip Type</span>
+                    <span class="trip-value" id="d-tripType">—</span>
+                </div>
+                <div class="trip-item">
+                    <span class="trip-label">Travelers</span>
+                    <span class="trip-value" id="d-travellers">—</span>
+                </div>
+                <div class="trip-item">
+                    <span class="trip-label">Budget</span>
+                    <span class="trip-value" id="d-budget">—</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Checklist Progress -->
+    <section class="dash-section">
+        <div class="dash-card">
+            <h2>🧳 Packing Progress</h2>
+            <div class="progress-info">
+                <span id="checkedCount">0</span> of <span id="totalCount">0</span> items packed
+                <span class="progress-percent" id="progressPercent">0%</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" id="progressFill"></div>
+            </div>
+            <p class="progress-note" id="progressNote">Head to the checklist to start packing!</p>
+        </div>
+    </section>
+
+
+    <!-- Budget Overview -->
+    <section class="dash-section">
+        <div class="dash-card">
+            <h2>💰 Budget Overview</h2>
+
+            <div class="budget-row">
+                <div class="budget-stat">
+                    <span class="budget-label">Total Budget</span>
+                    <span class="budget-value green" id="d-totalBudget">₹0</span>
+                </div>
+                <div class="budget-stat">
+                    <span class="budget-label">Spent</span>
+                    <span class="budget-value red" id="d-spent">₹0</span>
+                </div>
+                <div class="budget-stat">
+                    <span class="budget-label">Remaining</span>
+                    <span class="budget-value blue" id="d-remaining">₹0</span>
+                </div>
+            </div>
+
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill budget-fill" id="budgetFill"></div>
+            </div>
+            <p class="progress-note" id="budgetNote">No expenses tracked yet.</p>
+        </div>
+    </section>
+
+    <!-- Export Button -->
+    <section class="export-section no-print">
+        <button id="exportPdfBtn">⬇️ Export as PDF</button>
+    </section>
+
+    <script src="../js/dashboard.js" defer></script>
+
+</body>
+
+</html>

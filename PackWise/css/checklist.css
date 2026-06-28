@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f8fafc;
+    color: #1f2937;
+}
+
+/* ── Checklist Header ── */
+
+.checklist-header {
+    text-align: center;
+    padding: 60px 20px 30px;
+}
+
+.checklist-header h1 {
+    font-size: 42px;
+    color: #2E8B57;
+    margin-bottom: 10px;
+}
+
+.checklist-header p {
+    color: #6b7280;
+    font-size: 18px;
+}
+
+/* ── Trip Summary ── */
+
+.trip-summary {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 10px;
+}
+
+.summary-card {
+    width: 100%;
+    max-width: 950px;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #2E8B57;
+}
+
+.summary-card h2 {
+    font-size: 22px;
+    color: #2E8B57;
+    margin-bottom: 16px;
+}
+
+.summary-card p {
+    font-size: 15px;
+    color: #374151;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.summary-card p strong {
+    color: #1f2937;
+}
+
+/* ── Packing List ── */
+
+.packing-list {
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 10px;
+}
+
+.list-card {
+    width: 100%;
+    max-width: 950px;
+    background: white;
+    padding: 35px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.list-card h2 {
+    font-size: 22px;
+    color: #2E8B57;
+    margin-bottom: 20px;
+}
+
+#packingItems {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+#packingItems li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: #f8fafc;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #374151;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#packingItems li:hover {
+    border-color: #2E8B57;
+    background: #E8F7EF;
+}
+
+#packingItems li.checked {
+    border-color: #2E8B57;
+    background: #E8F7EF;
+    color: #2E8B57;
+    text-decoration: line-through;
+    opacity: 0.75;
+}
+
+#packingItems li input[type="checkbox"] {
+    accent-color: #2E8B57;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* ── Add Custom Item ── */
+
+.custom-item {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px 20px 10px;
+    max-width: 990px;
+    margin: 0 auto;
+}
+
+.custom-item input {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+    max-width: 700px;
+}
+
+.custom-item input:focus {
+    border-color: #2E8B57;
+    box-shadow: 0 0 8px rgba(46, 139, 87, 0.2);
+}
+
+.custom-item input::placeholder {
+    color: #9ca3af;
+}
+
+#addItem {
+    padding: 15px 28px;
+    background: #2E8B57;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+#addItem:hover {
+    background: #236b45;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(46, 139, 87, 0.3);
+}
+
+/* ── Action Buttons ── */
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    padding: 20px 20px 70px;
+}
+
+.actions button {
+    padding: 15px 35px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+#saveBtn {
+    background: #2E8B57;
+    color: white;
+}
+
+#saveBtn:hover {
+    background: #236b45;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(46, 139, 87, 0.3);
+}
+
+#dashboardBtn {
+    background: transparent;
+    border: 2px solid #2E8B57 !important;
+    color: #2E8B57;
+}
+
+#dashboardBtn:hover {
+    background: #2E8B57;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+
+    .checklist-header h1 {
+        font-size: 32px;
+    }
+
+    .checklist-header p {
+        font-size: 16px;
+    }
+
+    .summary-card,
+    .list-card {
+        padding: 25px 20px;
+    }
+
+    #packingItems {
+        grid-template-columns: 1fr;
+    }
+
+    .custom-item {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .custom-item input {
+        max-width: 100%;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .actions button {
+        width: 100%;
+        max-width: 400px;
+    }
+}

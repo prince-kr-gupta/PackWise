@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Budget Tracker | PackWise</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/budget.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">PackWise</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="checklist.html">Checklist</a></li>
+                <li><a href="budget.html">Budget</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="budget-header">
+        <h1>Budget Tracker</h1>
+        <p>Track your travel expenses by category and stay within your budget.</p>
+    </section>
+
+
+    <section class="budget-overview">
+
+        <div class="overview-card total">
+            <span class="overview-label">Total Budget</span>
+            <span class="overview-amount" id="totalBudget">₹0</span>
+        </div>
+
+        <div class="overview-card spent">
+            <span class="overview-label">Total Spent</span>
+            <span class="overview-amount" id="totalSpent">₹0</span>
+        </div>
+
+        <div class="overview-card remaining">
+            <span class="overview-label">Remaining</span>
+            <span class="overview-amount" id="totalRemaining">₹0</span>
+        </div>
+
+    </section>
+
+
+    <section class="add-expense-section">
+
+        <div class="add-expense-card">
+
+            <h2>Add Expense</h2>
+
+            <div class="expense-form">
+
+                <div class="input-box">
+                    <label>Category</label>
+                    <select id="expenseCategory">
+                        <option value="">Select Category</option>
+                        <option value="Transport">🚗 Transport</option>
+                        <option value="Food">🍔 Food</option>
+                        <option value="Stay">🏨 Stay / Hotel</option>
+                        <option value="Shopping">🛍️ Shopping</option>
+                        <option value="Activities">🎢 Activities</option>
+                        <option value="Medical">💊 Medical</option>
+                        <option value="Other">📦 Other</option>
+                    </select>
+                </div>
+
+                <div class="input-box">
+                    <label>Description</label>
+                    <input type="text" id="expenseDesc" placeholder="e.g. Bus ticket to Manali">
+                </div>
+
+                <div class="input-box">
+                    <label>Amount (₹)</label>
+                    <input type="number" id="expenseAmount" placeholder="500" min="1">
+                </div>
+
+                <button class="btn-add-expense" id="addExpenseBtn">+ Add Expense</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="expenses-section">
+
+        <div class="expenses-card">
+
+            <div class="expenses-header">
+                <h2>Expenses</h2>
+                <select id="filterCategory">
+                    <option value="All">All Categories</option>
+                    <option value="Transport">🚗 Transport</option>
+                    <option value="Food">🍔 Food</option>
+                    <option value="Stay">🏨 Stay / Hotel</option>
+                    <option value="Shopping">🛍️ Shopping</option>
+                    <option value="Activities">🎢 Activities</option>
+                    <option value="Medical">💊 Medical</option>
+                    <option value="Other">📦 Other</option>
+                </select>
+            </div>
+
+            <ul id="expenseList">
+                <li class="empty-state">No expenses added yet. Start adding above!</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+
+    <section class="actions">
+        <button id="clearBtn">Clear All</button>
+        <button id="backBtn">← Back to Checklist</button>
+    </section>
+
+    <script src="../js/budget.js" defer></script>
+
+</body>
+
+</html>

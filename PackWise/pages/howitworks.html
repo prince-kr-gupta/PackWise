@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How It Works - TripWise</title>
+    <link rel="stylesheet" href = "../css/howitworks.css">
+    
+</head>
+<body>
+    <p class="howitworks-top">
+        How IT Works
+    </p>
+<p class="howitworks-title">1️⃣ Home Page (index.html)</p>
+
+<p class="howitworks-description">User lands on the home page</p>
+<p class="howitworks-description">Reads about the app</p>
+<p class="howitworks-description">Clicks "Start Planning" to go to the Planner</p>
+
+
+<p class="howitworks-title">2️⃣ Trip Planner (planner.html)</p>
+
+<p class="howitworks-description">User fills in the form:</p>
+
+<p class="howitworks-description">Destination, Days, Weather, Trip Type, Travelers, Budget</p>
+
+
+<p class="howitworks-description">On submit, all data is saved as one object in localStorage under the key "trip"
+User is redirected to the Checklist page</p>
+
+
+<p class="howitworks-title">3️⃣ Packing Checklist (checklist.html)</p>
+
+<p class="howitworks-description">Page loads and reads trip data from localStorage</p>
+<p class="howitworks-description">Displays the Trip Summary at the top</p>
+<p class="howitworks-description">Shows a smart packing list based on the trip details</p>
+<p class="howitworks-description">User checks off items as they pack</p>
+<p class="howitworks-description">Clicking "Save Checklist" saves progress to localStorage under key "packwiseChecklist"</p>
+<p class="howitworks-description">User can go to Budget or Dashboard from here</p>
+
+
+<p class="howitworks-title">4️⃣ Budget Tracker (budget.html)</p>
+
+<p class="howitworks-description">Auto-loads the budget amount from localStorage (trip.budget)</p>
+<p class="howitworks-description">User adds expenses with a category, description and amount</p>
+<p class="howitworks-description">Each expense is saved to localStorage under key "packwiseBudget"</p>
+<p class="howitworks-description">Running totals (Spent, Remaining) update instantly
+<p class="howitworks-description">Red warning appears if spending exceeds budget</p>
+
+
+<p class="howitworks-title">5️⃣ Dashboard (dashboard.html)</p>
+
+<p class="howitworks-description">Reads all 3 data sources from localStorage:</p>
+
+<p class="howitworks-description">"trip" → Trip Summary</p>
+<p class="howitworks-description">"packwiseChecklist" → Packing Progress</p>
+<p class="howitworks-description">"packwiseBudget" → Budget Overview</p>
+
+
+<p class="howitworks-description">Displays everything in one clean view
+<p class="howitworks-description">User can click "Export as PDF" to print/save the dashboard</p>
+</body>
+</html>

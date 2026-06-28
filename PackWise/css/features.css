@@ -1,0 +1,14 @@
+    .features-top{
+            text-align: center;
+            color: #2E8B57;
+            font-weight: bold;
+            font-size : 50px;
+        }
+        .features-title{
+            font-weight : bold;
+            font-size: 28px;
+        }
+        .features-description{
+            font-size : 18px;
+
+        }

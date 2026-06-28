@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trip Planner | PackWise</title>
+    <link rel="stylesheet" href ="../style.css">
+    <link rel="stylesheet" href="../css/planner.css">
+    <script src="../js/planner.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                PackWise
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <section class="planner-title">
+
+        <h1>Plan Your Next Adventure</h1>
+
+        <p>
+            Fill in your trip details and let PackWise prepare your travel essentials.
+        </p>
+
+    </section>
+
+
+    <section class="planner">
+
+        <form class="planner-form">
+
+        
+            <div class="input-box">
+
+                <label>Destination</label>
+
+                <input
+                    type="text"
+                    placeholder="e.g. Manali"
+                    id="destination">
+
+            </div>
+
+            <!-- Days -->
+
+            <div class="input-box">
+
+                <label>Trip Duration (Days)</label>
+
+                <input
+                    type="number"
+                    min="1"
+                    placeholder="5"
+                    id="days">
+
+            </div>
+
+            <!-- Weather -->
+
+            <div class="input-box">
+
+                <label>Weather</label>
+
+                <select id="weather">
+
+                    <option>Select Weather</option>
+
+                    <option>Hot</option>
+
+                    <option>Cold</option>
+
+                    <option>Rainy</option>
+
+                    <option>Snowy</option>
+
+                    <option>Mixed</option>
+
+                </select>
+
+            </div>
+
+            <!-- Trip Type -->
+
+            <div class="input-box">
+
+                <label>Trip Type</label>
+
+                <select id="tripType">
+
+                    <option>Select Trip</option>
+
+                    <option>Vacation</option>
+
+                    <option>Trekking</option>
+
+                    <option>Camping</option>
+
+                    <option>Business</option>
+
+                    <option>Road Trip</option>
+
+                    <option>Beach</option>
+
+                </select>
+
+            </div>
+
+            <!-- Budget -->
+
+            <div class="input-box">
+
+                <label>Budget (₹)</label>
+
+                <input
+                    type="number"
+                    placeholder="15000"
+                    id="budget">
+
+            </div>
+
+            <!-- Travelers -->
+
+            <div class="input-box">
+
+                <label>Travelers</label>
+
+                <input
+                    type="number"
+                    placeholder="2"
+                    min="1"
+                    id="travellers">
+
+            </div>
+
+            <!-- Notes -->
+
+            <div class="input-box full">
+
+                <label>Special Notes</label>
+
+                <textarea
+                    rows="5"
+                    placeholder="Anything important..."></textarea>
+
+            </div>
+
+            <!-- Button -->
+
+            <button type="submit" class="btn-primary">
+
+                Generate Packing List
+
+            </button>
+
+        </form>
+
+    </section>
+
+</body>
+
+</html>

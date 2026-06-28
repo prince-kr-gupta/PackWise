@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Packing Checklist | PackWise</title>
+
+    
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/planner.css">
+    <link rel="stylesheet" href="../css/checklist.css">
+
+   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            PackWise
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="planner.html">Planner</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<section class="checklist-header">
+
+    <h1>Your Packing Checklist</h1>
+
+    <p>
+        Based on your trip details, PackWise has prepared your travel essentials.
+    </p>
+
+</section>
+
+
+
+<section class="trip-summary">
+
+    <div class="summary-card">
+
+        <h2>Trip Summary</h2>
+
+        <p><strong>Destination:</strong> <span id="destination"></span></p>
+
+        <p><strong>Days:</strong> <span id="days"></span></p>
+
+        <p><strong>Weather:</strong> <span id="weather"></span></p>
+
+        <p><strong>Trip Type:</strong> <span id="tripType"></span></p>
+
+        <p><strong>Budget:</strong> ₹<span id="budget"></span></p>
+
+    </div>
+
+</section>
+
+
+
+<section class="packing-list">
+
+    <div class="list-card">
+
+        <h2>Packing Essentials</h2>
+
+        <ul id="packingItems">
+
+            <!-- JavaScript will add items here -->
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+
+<section class="custom-item">
+
+    <input
+        type="text"
+        id="customItem"
+        placeholder="Add custom item...">
+
+    <button id="addItem">
+
+        Add Item
+
+    </button>
+
+</section>
+
+
+
+<section class="actions">
+
+    <button id="saveBtn">
+
+        Save Checklist
+
+    </button>
+    <button id ="budgetBtn">💰 Track Budget</button>
+
+    <button id="dashboardBtn">
+
+        Go to Dashboard
+
+    </button>
+
+</section>
+
+<script src="../js/checklist.js"></script>
+</body>
+</html>
