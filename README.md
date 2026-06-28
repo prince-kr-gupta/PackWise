@@ -13,7 +13,7 @@ Built with pure HTML, CSS & JavaScript — no frameworks, no backend, no login r
 🔗 View Live
 
 
-<img src="PackWise/assets/PackWise.jpg" alt="PackWise image">
+<img src="assets/PackWise.jpg" alt="PackWise image">
 
 
 
