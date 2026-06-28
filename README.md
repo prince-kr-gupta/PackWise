@@ -18,16 +18,16 @@ Built with pure HTML, CSS & JavaScript — no frameworks, no backend, no login r
 
 
 
-##✨ Features
+<p>✨ Features</p>
 
 
-✈️ Trip Planner — Enter destination, duration, weather, trip type, travelers and budget
-🧳 Smart Checklist — Auto-generated packing list based on your trip details with custom item support
-💰 Budget Tracker — Track expenses by category with real-time remaining balance
-📊 Dashboard — Complete trip overview with packing progress and budget summary
-📄 Export as PDF — Download your dashboard as a PDF with one click
-💾 Persistent Data — All data saved in localStorage, synced across all pages
-📱 Responsive Design — Works on desktop and mobile
+<p>✈️ Trip Planner — Enter destination, duration, weather, trip type, travelers and budget</p>
+<p>🧳 Smart Checklist — Auto-generated packing list based on your trip details with custom item support</p>
+<p>💰 Budget Tracker — Track expenses by category with real-time remaining balance</p>
+<p>📊 Dashboard — Complete trip overview with packing progress and budget summary</p>
+<p>📄 Export as PDF — Download your dashboard as a PDF with one click</p>
+<p>💾 Persistent Data — All data saved in localStorage, synced across all pages</p>
+<p>📱 Responsive Design — Works on desktop and mobile</p>
 
 
 
