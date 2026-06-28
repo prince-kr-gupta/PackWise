@@ -28,26 +28,18 @@ Built with pure HTML, CSS & JavaScript — no frameworks, no backend, no login r
 <p>📄 Export as PDF — Download your dashboard as a PDF with one click</p>
 <p>💾 Persistent Data — All data saved in localStorage, synced across all pages</p>
 <p>📱 Responsive Design — Works on desktop and mobile</p>
-
-
-
+<br>
 🗺️ How It Works
 
 Home → Planner → Checklist → Budget → Dashboard
 
 
-Home — Learn about the app and get started
-Planner — Fill in your trip details (saved to localStorage)
-Checklist — Get a smart packing list, check items off as you pack
-Budget — Add and track expenses by category
-Dashboard — See your full trip summary, packing progress and budget at a glance
-Export — Download your dashboard as a PDF
-
-
-
-🛠️ Tech Stack
-
-TechnologyUsed ForHTML5Page structureCSS3Styling & responsive designJavaScript (ES6)Logic & DOM manipulationlocalStorageData persistence across pageswindow.print()PDF exportGoogle FontsTypography (Poppins)
+<p>Home — Learn about the app and get started</p>
+<p>Planner — Fill in your trip details (saved to localStorage)</p>
+<p>Checklist — Get a smart packing list, check items off as you pack</p>
+<p>Budget — Add and track expenses by category</p>
+<p>Dashboard — See your full trip summary, packing progress and budget at a glance</p>
+<p>Export — Download your dashboard as a PDF</p>
 
 
 📁 Project Structure
