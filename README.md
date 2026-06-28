@@ -52,6 +52,7 @@ TechnologyUsed ForHTML5Page structureCSS3Styling & responsive designJavaScript (
 
 📁 Project Structure
 
+```
 PackWise/
 ├── index.html              # Home page
 ├── style.css               # Global styles
@@ -74,21 +75,14 @@ PackWise/
 │   └── dashboard.js
 └── assets/
     └── travelimage.png
-
-
-🚀 Getting Started
+```
+ Getting Started
 
 Run Locally
-
-
 Clone the repository:
 
 
 bashgit clone https://github.com/prince-kr-gupta/PackWise
-
-
-Open the project folder:
-
 
 bashcd PackWise
 
